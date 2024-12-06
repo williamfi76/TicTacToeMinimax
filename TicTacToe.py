@@ -135,15 +135,15 @@ root.mainloop()
 
 """
 Algoritma Minimax adalah algoritma yang digunakan untuk mencari solusi optimal dalam permainan tic tac toe. 
-Algoritma ini dibangun atas strategi minimax, yang mengasumsikan bahwa AI akan mencoba semua posisi papan yang 
+Algoritma ini dibangun dengan penerapan strategi minimax, yang mengasumsikan bahwa AI akan mencoba semua posisi papan yang 
 dapat dilakukan oleh player dan mencari solusi yang memberikan skor terbesar bagi AI. 
 
 Completeness: 
-Program ini bisa disebut complete, karena solusi yang dimunculkan oleh computer yaitu win/draw. Computer AI disini
-dibuat agar tidak pernah kalah.
+Program ini bisa disebut complete, karena solusi yang dimunculkan oleh computer selalu win atau draw.
+Algoritma AI yang dibuat disini sudah dipastikan tidak pernah kalah.
 
 Optimality:
-Algoritma minimax adalah optimal, karena ia dapat menemukan solusi optimal yang paling efektif dalam permainan 
+Algoritma minimax bisa dibilang optimal, karena ia dapat menemukan solusi optimal yang paling efektif dalam permainan 
 tic tac toe untuk mencegah player menang. 
 
 Time Complexity:
