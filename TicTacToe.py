@@ -30,6 +30,7 @@ def evaluate(b):
     return 0
 
 
+# Recursive function
 def minimax(board, depth, isMax):
     score = evaluate(board)
 
@@ -131,3 +132,22 @@ status_label.grid(row=3, column=0, columnspan=3)
 
 # Start the main loop
 root.mainloop()
+
+"""
+Algoritma Minimax adalah algoritma yang digunakan untuk mencari solusi optimal dalam permainan tic tac toe. 
+Algoritma ini dibangun atas strategi minimax, yang mengasumsikan bahwa AI akan mencoba semua posisi papan yang 
+dapat dilakukan oleh player dan mencari solusi yang memberikan skor terbesar bagi AI. 
+
+Completeness: 
+Program ini bisa disebut complete, karena solusi yang dimunculkan oleh computer yaitu win/draw. Computer AI disini
+dibuat agar tidak pernah kalah.
+
+Optimality:
+Algoritma minimax adalah optimal, karena ia dapat menemukan solusi optimal yang paling efektif dalam permainan 
+tic tac toe untuk mencegah player menang. 
+
+Time Complexity:
+Program ini memiliki time complexity O(2^n) dengan n sebagai depth dari tree nya. Tree disini mengacu kepada pilihan 
+move yang akan dilakukan oleh computer yang nanti nya akan dikalkulasi dan dicari nilai yang paling maksimal untuk
+diambil.
+"""
